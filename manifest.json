@@ -1,0 +1,21 @@
+{
+  "id": "./",
+  "name": "Vinde a Mim — Renova-me Deus Meu",
+  "short_name": "Vinde a Mim",
+  "description": "Biblioteca cristã de leitura diária da Renova-me Deus Meu.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#062d4e",
+  "theme_color": "#07365d",
+  "icons": [
+    {
+      "src": "./assets/vinde-a-mim-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

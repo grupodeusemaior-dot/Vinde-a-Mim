@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07365d">
+  <meta name="description" content="Biblioteca diária de leitura cristã — Renova-me Deus Meu.">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./assets/vinde-a-mim-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/vinde-a-mim-icon.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Vinde a Mim — Renova-me Deus Meu</title>
+</head>
+<body>
+  <div id="launchSplash" class="launch-splash" aria-label="Vinde a Mim">
+    <img src="./assets/vinde-a-mim-icon.png" alt="Vinde a Mim — Renova-me Deus Meu">
+    <div class="splash-caption">VINDE A MIM</div>
+    <div class="splash-subtitle">RENOVA-ME DEUS MEU</div>
+  </div>
+
+  <header class="topbar">
+    <button class="brand-button" id="homeBrand" aria-label="Voltar ao início">
+      <img src="./assets/vinde-a-mim-icon.png" alt="" class="topbar-icon">
+      <span>VINDE A MIM <small>RENOVA-ME DEUS MEU</small></span>
+    </button>
+    <button class="icon-button" id="installBtn" hidden>＋ Instalar</button>
+  </header>
+
+  <main id="app" class="app-shell">
+    <section id="homeView" class="view">
+      <div class="home-welcome">
+        <span class="eyebrow">BIBLIOTECA CRISTÃ DIGITAL</span>
+        <h1>Encontre sua leitura<br><span>de hoje.</span></h1>
+        <p>Um encontro diário com a Palavra de Deus.</p>
+      </div>
+      <div class="section-heading">
+        <div><span class="eyebrow">SEUS MÓDULOS</span><h2>Livros disponíveis</h2></div>
+        <span class="book-count">04 módulos</span>
+      </div>
+      <div id="bookGrid" class="book-grid"></div>
+      <div class="offline-note"><span class="online-dot"></span><span id="connectionLabel">Preparando leitura offline…</span></div>
+    </section>
+
+    <section id="readerView" class="view" hidden>
+      <div class="reader-heading">
+        <button class="back-home" id="backHome">← Biblioteca</button>
+        <div class="reader-bookline" id="readerBookline"></div>
+      </div>
+      <button class="presentation-link" id="presentationBtn" hidden>▤ Ler apresentação</button>
+      <div id="readerContent" class="reader-content"></div>
+      <div class="reader-controls">
+        <div class="font-controls" aria-label="Tamanho das letras">
+          <span>Tamanho das letras</span>
+          <div><button id="fontDown" aria-label="Diminuir letras">A−</button><output id="fontSizeLabel">Grande</output><button id="fontUp" aria-label="Aumentar letras">A+</button></div>
+        </div>
+        <div class="chapter-nav">
+          <button id="previousBtn" class="nav-button quiet">← Anterior</button>
+          <span id="chapterPosition"></span>
+          <button id="nextBtn" class="nav-button primary">Próxima história →</button>
+        </div>
+      </div>
+      <p id="lockedMessage" class="locked-message" hidden></p>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navegação principal">
+    <button class="bottom-item active" id="navHome" aria-current="page"><span class="bottom-icon">⌂</span><span>Início</span></button>
+    <button class="bottom-item" id="navRead"><span class="bottom-icon">▤</span><span>Leitura</span></button>
+    <button class="bottom-item" id="navCredits"><span class="bottom-icon">ⓘ</span><span>Créditos</span></button>
+    <a class="bottom-item" id="navSite" href="https://sites.google.com/view/grupo-deus-e-maior/p%C3%A1gina-inicial" target="_blank" rel="noopener noreferrer"><span class="bottom-icon">↗</span><span>Site</span></a>
+  </nav>
+
+  <dialog id="creditsDialog" class="modal">
+    <button class="modal-close" id="closeCredits" aria-label="Fechar">×</button>
+    <img class="credits-icon" src="./assets/vinde-a-mim-icon.png" alt="Vinde a Mim">
+    <span class="eyebrow">CRÉDITOS</span>
+    <h2>Renova-me Deus Meu</h2>
+    <p>Produzido por Ricardo Augusto de Oliveira, criador do Google Site Renova-me Deus Meu.</p>
+    <button class="primary-wide" id="creditsOk">Voltar</button>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="./script.js" defer></script>
+</body>
+</html>

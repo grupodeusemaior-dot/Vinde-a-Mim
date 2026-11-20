@@ -1,0 +1,36 @@
+{
+  "modulos": [
+    {
+      "id": "vinde-volume-1",
+      "titulo": "Vinde a Mim — Volume 1",
+      "total_capitulos": 100,
+      "apresentacao_paragrafos": 0,
+      "primeiro_capitulo": "Criação: Reflexões à Luz da Escritura",
+      "ultimo_capitulo": "A Certeza da Vitória"
+    },
+    {
+      "id": "vinde-volume-2",
+      "titulo": "Vinde a Mim — Volume 2",
+      "total_capitulos": 100,
+      "apresentacao_paragrafos": 0,
+      "primeiro_capitulo": "Uma Lição Importante para os Pais – Juízes 13.",
+      "ultimo_capitulo": "Diversas Vestimentas."
+    },
+    {
+      "id": "samanta",
+      "titulo": "Samanta — Os caminhos da vida",
+      "total_capitulos": 86,
+      "apresentacao_paragrafos": 5,
+      "primeiro_capitulo": "O Dia em que Nasci",
+      "ultimo_capitulo": "Até Que Tudo Se Fez Novo"
+    },
+    {
+      "id": "caminhos-jose",
+      "titulo": "Os Caminhos de José",
+      "total_capitulos": 97,
+      "apresentacao_paragrafos": 24,
+      "primeiro_capitulo": "Um Dia Como Outro Qualquer",
+      "ultimo_capitulo": "O Rei"
+    }
+  ]
+}
